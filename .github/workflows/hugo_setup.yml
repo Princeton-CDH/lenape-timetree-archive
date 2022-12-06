@@ -1,0 +1,40 @@
+name: reusable hugo setup workflow
+
+on:
+  workflow_call:
+
+jobs:
+  setup_hugo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Get Hugo version
+        run: echo "HUGO_VERSION=$(cat .hugo_version)" >> $GITHUB_ENV
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Get node version from package.json
+        run: echo "NODE_VERSION=$(cat package.json | jq -r '.volta.node')" >> $GITHUB_ENV
+
+      - name: Setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Fetch js dependencies from cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            npm-${{ hashFiles('package-lock.json') }}
+            npm-
+
+      - name: Install js dependencies
+        run: npm ci
