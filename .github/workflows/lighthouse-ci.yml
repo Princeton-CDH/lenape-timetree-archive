@@ -14,8 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install hugo and npm dependencies
-        uses: ./.github/workflows/hugo_setup.yml
+      - uses: ./.github/workflows/hugo_setup.yml
 
       - name: build site
         run: hugo --minify
