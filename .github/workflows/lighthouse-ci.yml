@@ -10,8 +10,8 @@ jobs:
     uses: Princeton-CDH/lenape-timetree/.github/workflows/hugo_setup.yml@chore/setup-lighthouse-ci
 
   build-ci:
-    name: build site and run lighthouse ci
-    runs-on: ubuntu-latest
+    # name: build site and run lighthouse ci
+    # runs-on: ubuntu-latest
 
     steps:
       - name: build site
