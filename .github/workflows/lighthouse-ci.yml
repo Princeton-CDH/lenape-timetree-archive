@@ -7,7 +7,7 @@ env:
 
 jobs:
   setup_hugo:
-    uses: Princeton-CDH/lenape-timetree/.github/workflows/hugo_setup.yml
+    uses: Princeton-CDH/lenape-timetree/.github/workflows/hugo_setup.yml@chore/setup-lighthouse-ci
 
   build-ci:
     name: build site and run lighthouse ci
