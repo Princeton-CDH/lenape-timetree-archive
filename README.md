@@ -5,7 +5,10 @@
 [![Hugo](https://img.shields.io/badge/hugo-0.117-blue.svg)](https://gohugo.io)
 ![Node version](https://img.shields.io/badge/node-18-blue)
 
-This repository includes source code and text content for the CDH-sponsored [Lunaapahkiing Princeton Timetree](https://cdh.princeton.edu/projects/lenape-timetree/) research project.
+This project contains an archived version of source code and content for the CDH-sponsored [Lunaapahkiing Princeton Timetree](https://cdh.princeton.edu/projects/lenape-timetree/) research project. In September 2023 the repository was split out to separate content and code, in order to simplify maintenance and ownership.  
+
+Current versions of the content and code for this project are avialable at [Princeton-CDH/lenape-timetree-content](https://github.com/Princeton-CDH/lenape-timetree-content) and [Princeton-CDH/lenape-timetree](https://github.com/Princeton-CDH/lenape-timetree).
+
 
 ## License
 
