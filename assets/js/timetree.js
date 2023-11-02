@@ -308,7 +308,7 @@ class TimeTree extends TimeTreeKeysMixin(BaseSVG) {
     // position and make it look like a leaf for interaction
     this.vizGroup
       .append("image")
-      .attr("href", "/img/plaque-nostrings.svg#main")
+      .attr("href", "/lenape-timetree-archive/img/plaque-nostrings.svg#main")
       .attr("aria-label", "dedication")
       .attr("role", "button")
       .attr("tabindex", 0)
@@ -320,7 +320,7 @@ class TimeTree extends TimeTreeKeysMixin(BaseSVG) {
     // add strings separately, for decoration only
     this.vizGroup
       .append("use")
-      .attr("href", "/img/plaque-strings.svg#main")
+      .attr("href", "/lenape-timetree-archive/img/plaque-strings.svg#main")
       .attr("transform", `translate(-70,220) scale(1.35)`);
 
     // enable zooming
