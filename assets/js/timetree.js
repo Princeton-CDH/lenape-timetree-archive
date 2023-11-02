@@ -314,7 +314,7 @@ class TimeTree extends TimeTreeKeysMixin(BaseSVG) {
       .attr("tabindex", 0)
       .attr("id", "dedication")
       .attr("data-id", "dedication")
-      .attr("data-url", "/dedication/")
+      .attr("data-url", "/lenape-timetree-archive/dedication/")
       .attr("transform", `translate(-70,220) scale(1.35)`)
       .on("click", this.selectLeaf.bind(this));
     // add strings separately, for decoration only
