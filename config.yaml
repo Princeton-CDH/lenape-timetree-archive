@@ -1,4 +1,5 @@
-baseURL: https://lenapetimetree.indigenous.princeton.edu/
+#baseURL: https://lenapetimetree.indigenous.princeton.edu/
+baseURL: https://princeton-cdh.github.io/lenape-timetree-archive/
 languageCode: en-us
 title: Lunaapahkiing Princeton Timetree
 theme: timetree
