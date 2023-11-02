@@ -203,12 +203,12 @@ body.page {
 body.page,
 body.taxonomy {
   main {
-    background-image: url("/img/sycamore-mobile.png");
+    background-image: url("/lenape-timetree-archive/img/sycamore-mobile.png");
     background-repeat: no-repeat;
     background-position: top right;
 
     @include for-desktop-up {
-      background-image: url("/img/sycamore-desktop.png");
+      background-image: url("/lenape-timetree-archive/img/sycamore-desktop.png");
     }
   }
 }

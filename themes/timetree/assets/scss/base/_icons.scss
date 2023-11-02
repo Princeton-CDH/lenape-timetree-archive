@@ -5,7 +5,7 @@
 */
 
 @mixin phosphoricon($path) {
-  $url: url("/img/icons/phosphor/" + $path);
+  $url: url("/lenape-timetree-archive/img/icons/phosphor/" + $path);
   -webkit-mask-image: $url;
   mask-image: $url;
 }
